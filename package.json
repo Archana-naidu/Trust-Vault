@@ -1,0 +1,26 @@
+{
+  "name": "trustvault-monorepo",
+  "version": "1.0.0",
+  "description": "TrustVault - Secure Document Sharing with a Tamper-Evident System",
+  "scripts": {
+    "install:all": "python -m pip install -r backend/requirements.txt && npm --prefix frontend install",
+    "seed": "python backend/seed.py",
+    "test": "python -m pytest backend/tests -v",
+    "backend": "python backend/run.py",
+    "frontend": "npm --prefix frontend run dev",
+    "dev": "npx concurrently -n \"FLASK_BACKEND,REACT_FRONTEND\" -c \"blue,green\" \"python backend/run.py\" \"npm --prefix frontend run dev\""
+  },
+  "keywords": [
+    "security",
+    "tamper-evident",
+    "cryptography",
+    "sha256",
+    "audit-chain",
+    "trustvault"
+  ],
+  "author": "TrustVault Engineering Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}

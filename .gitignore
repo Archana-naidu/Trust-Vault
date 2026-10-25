@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# SQLite temporary and journal files
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Storage backups and test uploads
+uploads/test_*
+uploads/vault/doc_*
+uploads/backup/doc_*
+backend/uploads/test_*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# All uploaded documents and backups
+backend/uploads/
+backend/backups/
+backend/venv/
+
+# Previous Node.js backend backup
+backend_backup_node/
+
+# Secret files
+.env.*
+!.env.example
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
